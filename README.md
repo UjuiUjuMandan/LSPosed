@@ -1,10 +1,17 @@
+LSPosed 内部测试开始<br/>
+LSPosed internal testing begins
+
+https://t.me/+d1tEeG-LAfoyNDY1
+
+如果对内测群被封禁踢出有疑问，在讨论群询问管理员，不要私聊。<br/>
+If you have any questions about being banned or kicked out of the internal testing group, please ask the admin in discussion group, no PM.
+
 https://telegram.me/LSPosed_bot
 
 ---
 
 # Request to join LSPosed Internal Test
 # 申请加入 LSPosed 内部测试
-
 
 ## LSPosed Internal Testing Recruitment Terms
 
@@ -35,7 +42,7 @@ If you agree to the above terms, please sign the following declaration.
 * 放弃访问软件源代码的权利。
 * 如果同意以上条款，请签署以下证明。
 
-Please sign the challenge code with your GitHub Authentication SSH keys and submit
+Please sign the challenge code with your GitHub Authentication SSH keys and submit<br/>
 请将下列挑战码用 GitHub SSH 身份验证密钥签名并提交
 
 UNIX and Windows Git Bash (tap to copy):
@@ -44,8 +51,8 @@ UNIX and Windows Git Bash (tap to copy):
 echo -n xijinpingcrypto | ssh-keygen -Y sign -n lsposed -f ~/.ssh/<your-key>
 ```
 
-GitHub username: 
+GitHub username:<br/>
 GitHub 用户名:
 
-SSH Signature:
+SSH Signature:<br/>
 SSH 签名:
