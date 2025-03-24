@@ -1,71 +1,51 @@
-# LSPosed Framework
+https://telegram.me/LSPosed_bot
 
-[![Build](https://img.shields.io/github/actions/workflow/status/LSPosed/LSPosed/core.yml?branch=master&event=push&logo=github&label=Build)](https://github.com/LSPosed/LSPosed/actions/workflows/core.yml?query=event%3Apush+branch%3Amaster+is%3Acompleted) [![Crowdin](https://img.shields.io/badge/Localization-Crowdin-blueviolet?logo=Crowdin)](https://lsposed.crowdin.com/lsposed) [![Channel](https://img.shields.io/badge/Follow-Telegram-blue.svg?logo=telegram)](https://t.me/LSPosed) [![Chat](https://img.shields.io/badge/Join-QQ%E9%A2%91%E9%81%93-red?logo=tencent-qq&logoColor=red)](https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&inviteCode=Xz9dJ&from=246610&biz=ka) [![Download](https://img.shields.io/github/v/release/LSPosed/LSPosed?color=orange&logoColor=orange&label=Download&logo=DocuSign)](https://github.com/LSPosed/LSPosed/releases/latest) [![Total](https://shields.io/github/downloads/LSPosed/LSPosed/total?logo=Bookmeter&label=Counts&logoColor=yellow&color=yellow)](https://github.com/LSPosed/LSPosed/releases)
+---
 
-## Introduction 
+# Request to join LSPosed Internal Test
+# 申请加入 LSPosed 内部测试
 
-A Riru / Zygisk module trying to provide an ART hooking framework which delivers consistent APIs with the OG Xposed, leveraging LSPlant hooking framework.
 
-> Xposed is a framework for modules that can change the behavior of the system and apps without touching any APKs. That's great because it means that modules can work for different versions and even ROMs without any changes (as long as the original code was not changed too much). It's also easy to undo. As all changes are done in the memory, you just need to deactivate the module and reboot to get your original system back. There are many other advantages, but here is just one more: multiple modules can do changes to the same part of the system or app. With modified APKs, you have to choose one. No way to combine them, unless the author builds multiple APKs with different combinations.
+## LSPosed Internal Testing Recruitment Terms
 
-## Supported Versions
+### Recruitment Purpose
 
-Android 8.1 ~ 14
+* Software internal deployment testing, test versions will only be distributed through internal channels.
 
-## Install
+### Tester Requirements
 
-1. Install Magisk v24+
-2. (For Riru flavor) Install [Riru](https://github.com/RikkaApps/Riru/releases/latest) v26.1.7+
-3. [Download](#download) and install LSPosed in Magisk app
-4. Reboot
-5. Open LSPosed manager from notification
-6. Have fun :)
+* Possess basic operational skills and be able to recover bricked devices.
+* Able to provide logs to developers.
+* Provide testing services voluntarily and adhere to confidentiality obligations, prohibiting sharing of test software packages with others.
+* Waive the right to access the software's source code.
 
-## Download
+If you agree to the above terms, please sign the following declaration.
 
-- For stable releases, please go to [Github Releases page](https://github.com/LSPosed/LSPosed/releases)
-- For canary build, please check [Github Actions](https://github.com/LSPosed/LSPosed/actions/workflows/core.yml?query=branch%3Amaster)
+## LSPosed 内部测试招募条款
 
-Note: debug builds are only available in Github Actions.
+### 招募目的
 
-## Get Help
-**Only bug reports from **THE LATEST DEBUG BUILD** will be accepted.**
-- GitHub issues: [Issues](https://github.com/LSPosed/LSPosed/issues/)
-- (For Chinese speakers) 本项目只接受英语**标题**的issue。如果您不懂英语，请使用[翻译工具](https://www.deepl.com/zh/translator)
+* 软件内部部署测试，测试版本仅通过内部渠道分发。
 
-## For Developers
+### 测试人员要求
 
-Developers are welcome to write Xposed modules with hooks based on LSPosed Framework. A module based on LSPosed framework is fully compatible with the original Xposed Framework, and vice versa, a Xposed Framework-based module will work well with LSPosed framework too.
+* 具备基本操作能力，能够恢复变砖设备。
+* 能向开发者提供日志。
+* 无偿提供测试服务并履行保密义务，禁止向他人分享测试软件包。
+* 放弃访问软件源代码的权利。
+* 如果同意以上条款，请签署以下证明。
 
-- [Xposed Framework API](https://api.xposed.info/)
+Please sign the challenge code with your GitHub Authentication SSH keys and submit
+请将下列挑战码用 GitHub SSH 身份验证密钥签名并提交
 
-We use our own module repository. We welcome developers to submit modules to our repository, and then modules can be downloaded in LSPosed.
+UNIX and Windows Git Bash (tap to copy):
 
-- [LSPosed Module Repository](https://github.com/Xposed-Modules-Repo)
+```
+echo -n xijinpingcrypto | ssh-keygen -Y sign -n lsposed -f ~/.ssh/<your-key>
+```
 
-## Community Discussion
+GitHub username: 
+GitHub 用户名:
 
-- Telegram: [@LSPosed](https://t.me/s/LSPosed)
-
-Notice: These community groups don't accept any bug report, please use [Get help](#get-help) to report.
-
-## Translation Contributing
-
-You can contribute translation [here](https://lsposed.crowdin.com/lsposed).
-
-## Credits 
-
-- [Magisk](https://github.com/topjohnwu/Magisk/): makes all these possible
-- [Riru](https://github.com/RikkaApps/Riru): provides a way to inject code into zygote process
-- [XposedBridge](https://github.com/rovo89/XposedBridge): the OG Xposed framework APIs
-- [Dobby](https://github.com/jmpews/Dobby): used for inline hooking
-- [LSPlant](https://github.com/LSPosed/LSPlant): the core ART hooking framework
-- [EdXposed](https://github.com/ElderDrivers/EdXposed): fork source
-- ~[SandHook](https://github.com/ganyao114/SandHook/): ART hooking framework for SandHook variant~
-- ~[YAHFA](https://github.com/rk700/YAHFA): previous ART hooking framework~
-- ~[dexmaker](https://github.com/linkedin/dexmaker) and [dalvikdx](https://github.com/JakeWharton/dalvik-dx): to dynamically generate YAHFA hooker classes~
-- ~[DexBuilder](https://github.com/LSPosed/DexBuilder): to dynamically generate YAHFA hooker classes~
-
-## License
-
-LSPosed is licensed under the **GNU General Public License v3 (GPL-3)** (http://www.gnu.org/copyleft/gpl.html).
+SSH Signature:
+SSH 签名:
